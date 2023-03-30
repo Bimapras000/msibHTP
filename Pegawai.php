@@ -33,7 +33,7 @@ class Pegawai{
         echo '<br>Jabatan '. $this->jabatan;
         echo '<br>Agama '.$this->agama;
         echo '<br>Status '.$this->status;
-        echo '<br>Gaji Pokok '.$this->setGajiPokok($this->jabatan);
+        echo '<br>Gaji Pokok Rp.'.number_format($this->setGajiPokok($this->jabatan),0,',','.');
         echo '<hr>';
 
     }
